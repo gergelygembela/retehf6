@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="hu.bme.mit.intellibus.ACCControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-04T21:28:06" hostname="G-ZENDESKTOP" time="0.021">
+  <properties/>
+  <testcase name="testReq3_2()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.021"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

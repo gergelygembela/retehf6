@@ -29,3 +29,7 @@
 - The ACC shall command the engine control according to the difference between the target speed and the current speed.
 
 - The ACC must measure the distance 90 meters ahead and determine if there is a car within 90 meters ahead.
+
+<!-- vitatando, de ez szerintem emlitendo -->
+### Ambiguity
+The 3rd and 4th requirements both cover car detection, but only a part of the expected outcome.
