@@ -98,3 +98,23 @@ void updateStateAndSendSignals(int speed, int distance) {
 }
 ```
 
+
+## Test objectives
+
+### Test 1
+Test 1 tests whether the ACC accelerates when a car is NOT in front in 90 meters.
+### Test 2
+### Test 3
+### Test 4
+### Test 5
+### Test 6
+
+
+## Review and summary
+
+We defined more test cases after inspecting the provided implementation, 
+as we found that it presents dangerous and erroneous behavior because the system fails to 
+take both parameters into account when commanding the EngineController.
+The new tests fail, even though they only evaluate expected behavior, and in order for the system to
+ be able to operate (more) safely, the problems described above should be fixed,
+ and the addittional tests we defined must all complete successfully.
