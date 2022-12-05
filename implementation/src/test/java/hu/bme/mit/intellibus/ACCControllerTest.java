@@ -100,9 +100,9 @@ class ACCControllerTest {
 
     }
 
-    //Tests whether the ACC increases the speed of the car correctly
+    //Tests whether the ACC may collide with an obstacle if its speed decreases.
     @Test
-    void testReq5(){
+    void testReq2_2(){
         acc.setSpeed(50);
         acc.currentSpeed(45);
         acc.currentDistance(72);
@@ -112,8 +112,9 @@ class ACCControllerTest {
         assertEquals(MockEngineController.State.DECREASE_SPEED, mockEngineController.getState());
     }
 
+    //Tests whether the ACC increases speed correctly when the obstacle is farther than 90 meters.
     @Test
-    void testReq5_1(){
+    void testReq2_1_1_1(){
         acc.setSpeed(50);
         acc.currentSpeed(45);
         acc.currentDistance(72);

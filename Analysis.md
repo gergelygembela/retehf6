@@ -105,12 +105,19 @@ void updateStateAndSendSignals(int speed, int distance) {
 ### Test 1
 Test 1 tests whether the ACC accelerates when a car is NOT in front in 90 meters.
 ### Test 2
-### Test 3
-### Test 4
-### Test 5
+Tests whether the ACC decreases the speed of the car correctly.
+
+### Test testReq2_2
+Tests whether the ACC may collide with an obstacle if its speed decreases.
+
+### Test testReq2_1_1_1_2
+Tests whether the ACC increases speed correctly when the obstacle is farther than 90 meters.
+
+### Test testReq1_2
+Tests whether the ACC can be turned off.
 
 ### Test testReq2_1_1_2
-Tests whether tha acc can command the engine to hold speed.
+Tests whether tha acc can command the engine to hold/maintain speed.
 
 
 ## Review and summary
