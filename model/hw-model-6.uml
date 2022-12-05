@@ -10,8 +10,26 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_BnxqMGRYEe2CJumRKTgSng" name="Requirements">
       <packagedElement xmi:type="uml:Class" xmi:id="_eTscEGRYEe2CJumRKTgSng" name="REQ1"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_h75R0GRYEe2CJumRKTgSng" name="REQ2"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_nOQjUGRYEe2CJumRKTgSng" name="REQ3"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_rM9NgGRYEe2CJumRKTgSng" name="REQ4"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_q5HVcHS0Ee25heOIaicdBQ" name="REQ1.1"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_0Rwf0HS0Ee25heOIaicdBQ" name="REQ1.2"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_8FC18HS0Ee25heOIaicdBQ" name="Refine1" client="_q5HVcHS0Ee25heOIaicdBQ" supplier="_eTscEGRYEe2CJumRKTgSng"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_-z1-gHS0Ee25heOIaicdBQ" name="Refine2" client="_0Rwf0HS0Ee25heOIaicdBQ" supplier="_eTscEGRYEe2CJumRKTgSng"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NX_kcHS1Ee25heOIaicdBQ" name="REQ2.1"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_XWgcAHS1Ee25heOIaicdBQ" name="Refine3" client="_NX_kcHS1Ee25heOIaicdBQ" supplier="_h75R0GRYEe2CJumRKTgSng"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_aVG7IHS1Ee25heOIaicdBQ" name="REQ2.1.1"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_pFowMHS1Ee25heOIaicdBQ" name="Refine4" client="_aVG7IHS1Ee25heOIaicdBQ" supplier="_NX_kcHS1Ee25heOIaicdBQ"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rAViUHS1Ee25heOIaicdBQ" name="REQ2.1.1.1"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_CbygIHS2Ee25heOIaicdBQ" name="REQ2.1.1.2"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UD-e0HS2Ee25heOIaicdBQ" name="REQ2.1.1.3"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_xGGxQHS2Ee25heOIaicdBQ" name="REQ2.2"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fC4m8HS3Ee25heOIaicdBQ" name="REQ2.2.1"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_KdFLIHS4Ee25heOIaicdBQ" name="REQ2.2.1.1"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_iKIPQHS4Ee25heOIaicdBQ" name="Refine5" client="_xGGxQHS2Ee25heOIaicdBQ" supplier="_NX_kcHS1Ee25heOIaicdBQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_qco4AHS4Ee25heOIaicdBQ" name="Refine6" client="_rAViUHS1Ee25heOIaicdBQ" supplier="_aVG7IHS1Ee25heOIaicdBQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_tLcAkHS4Ee25heOIaicdBQ" name="Refine7" client="_CbygIHS2Ee25heOIaicdBQ" supplier="_aVG7IHS1Ee25heOIaicdBQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_yJt4cHS4Ee25heOIaicdBQ" name="Refine8" client="_UD-e0HS2Ee25heOIaicdBQ" supplier="_aVG7IHS1Ee25heOIaicdBQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_20ovcHS4Ee25heOIaicdBQ" name="Refine9" client="_fC4m8HS3Ee25heOIaicdBQ" supplier="_xGGxQHS2Ee25heOIaicdBQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_4O5G8HS4Ee25heOIaicdBQ" name="Refine10" client="_KdFLIHS4Ee25heOIaicdBQ" supplier="_fC4m8HS3Ee25heOIaicdBQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_DXWKYGRYEe2CJumRKTgSng" name="System">
       <ownedComment xmi:type="uml:Comment" xmi:id="_X6KB8GRqEe2CJumRKTgSng" annotatedElement="_NuJh8GRfEe2CJumRKTgSng">
@@ -684,10 +702,8 @@ As Papyrus does not support simple specification of a (state machine) state here
       <appliedProfile xmi:type="uml:Profile" href="../MiniUTP/MiniUTP.profile.uml#_j6uRIGpaEe2xd7qHFoO1-A"/>
     </profileApplication>
   </uml:Model>
-  <Requirements:Requirement xmi:id="_eT53cGRYEe2CJumRKTgSng" base_NamedElement="_eTscEGRYEe2CJumRKTgSng" id="1" text="The user shall be able to turn on the ACC." base_Class="_eTscEGRYEe2CJumRKTgSng"/>
-  <Requirements:Requirement xmi:id="_h8EQ8GRYEe2CJumRKTgSng" base_NamedElement="_h75R0GRYEe2CJumRKTgSng" id="2" text="When turned on the ACC shall set the target speed." base_Class="_h75R0GRYEe2CJumRKTgSng"/>
-  <Requirements:Requirement xmi:id="_nOWC4GRYEe2CJumRKTgSng" base_NamedElement="_nOQjUGRYEe2CJumRKTgSng" id="3" text="If the current speed is lower than the target speed and ACC does not detect a car in front in 90 meters, then the ACC shall command the engine to accelerate." base_Class="_nOQjUGRYEe2CJumRKTgSng"/>
-  <Requirements:Requirement xmi:id="_rNEiQGRYEe2CJumRKTgSng" base_NamedElement="_rM9NgGRYEe2CJumRKTgSng" id="4" text="If ACC detects a car in front, then it shall decrease the speed of the car." base_Class="_rM9NgGRYEe2CJumRKTgSng"/>
+  <Requirements:Requirement xmi:id="_eT53cGRYEe2CJumRKTgSng" base_NamedElement="_eTscEGRYEe2CJumRKTgSng" id="1" text="The user shall be able to command the ACC.&#xD;&#xA;" base_Class="_eTscEGRYEe2CJumRKTgSng"/>
+  <Requirements:Requirement xmi:id="_h8EQ8GRYEe2CJumRKTgSng" base_NamedElement="_h75R0GRYEe2CJumRKTgSng" id="2" text="The ACC shall command the engine control when it is on.&#xD;&#xA;" base_Class="_h75R0GRYEe2CJumRKTgSng"/>
   <Blocks:ValueType xmi:id="_7ebmAGRaEe2CJumRKTgSng" base_DataType="_7eWtgGRaEe2CJumRKTgSng" unit="_BM8A8GRbEe2CJumRKTgSng"/>
   <Blocks:ValueType xmi:id="_8z0EkGRaEe2CJumRKTgSng" base_DataType="_8zy2cGRaEe2CJumRKTgSng" unit="_FnaoMGRbEe2CJumRKTgSng"/>
   <Blocks:Block xmi:id="_CRB-YGRfEe2CJumRKTgSng" base_Class="_CQ9s8GRfEe2CJumRKTgSng"/>
@@ -726,4 +742,24 @@ As Papyrus does not support simple specification of a (state machine) state here
   <MiniUTP.MiniUTP:TestCase xmi:id="_OkEaAHSJEe22OK_vLSvzYQ" base_Behavior="_9sjxsHSFEe22OK_vLSvzYQ"/>
   <MiniUTP.MiniUTP:TestCase xmi:id="_zUWKQHSREe22OK_vLSvzYQ" base_Behavior="_m8y0MHSQEe22OK_vLSvzYQ"/>
   <MiniUTP.MiniUTP:TestCase xmi:id="_048wkHSREe22OK_vLSvzYQ" base_Behavior="_sOewQHSQEe22OK_vLSvzYQ"/>
+  <Requirements:Requirement xmi:id="_q5aQYHS0Ee25heOIaicdBQ" base_NamedElement="_q5HVcHS0Ee25heOIaicdBQ" id="1.1" text="The user shall be able to set a target speed and use that to engage ACC if it is off.&#xD;&#xA;" base_Class="_q5HVcHS0Ee25heOIaicdBQ"/>
+  <Requirements:Requirement xmi:id="_0R5pwHS0Ee25heOIaicdBQ" base_NamedElement="_0Rwf0HS0Ee25heOIaicdBQ" id="1.2" text="The user shall be able to clear the set speed and thereby turn off the ACC.&#xD;&#xA;" base_Class="_0Rwf0HS0Ee25heOIaicdBQ"/>
+  <Requirements:Refine xmi:id="_8FL_4HS0Ee25heOIaicdBQ" base_DirectedRelationship="_8FC18HS0Ee25heOIaicdBQ" base_Abstraction="_8FC18HS0Ee25heOIaicdBQ"/>
+  <Requirements:Refine xmi:id="_-z_IcHS0Ee25heOIaicdBQ" base_DirectedRelationship="_-z1-gHS0Ee25heOIaicdBQ" base_Abstraction="_-z1-gHS0Ee25heOIaicdBQ"/>
+  <Requirements:Requirement xmi:id="_NYJ8gHS1Ee25heOIaicdBQ" base_NamedElement="_NX_kcHS1Ee25heOIaicdBQ" id="2.1" text="The ACC shall maintain the target speed set by the driver.&#xD;&#xA;" base_Class="_NX_kcHS1Ee25heOIaicdBQ"/>
+  <Requirements:Refine xmi:id="_XWgcAXS1Ee25heOIaicdBQ" base_DirectedRelationship="_XWgcAHS1Ee25heOIaicdBQ" base_Abstraction="_XWgcAHS1Ee25heOIaicdBQ"/>
+  <Requirements:Requirement xmi:id="_aVG7IXS1Ee25heOIaicdBQ" base_NamedElement="_aVG7IHS1Ee25heOIaicdBQ" id="2.1.1" text="The ACC shall command the engine control according to the difference between the target speed and the current speed.&#xD;&#xA;" base_Class="_aVG7IHS1Ee25heOIaicdBQ"/>
+  <Requirements:Refine xmi:id="_pFzIQHS1Ee25heOIaicdBQ" base_DirectedRelationship="_pFowMHS1Ee25heOIaicdBQ" base_Abstraction="_pFowMHS1Ee25heOIaicdBQ"/>
+  <Requirements:Requirement xmi:id="_rAfTUHS1Ee25heOIaicdBQ" base_NamedElement="_rAViUHS1Ee25heOIaicdBQ" id="2.1.1.1" text="If the current speed is lower than the target speed, then the ACC shall command the engine to accelerate.&#xD;&#xA;" base_Class="_rAViUHS1Ee25heOIaicdBQ"/>
+  <Requirements:Requirement xmi:id="_CbygIXS2Ee25heOIaicdBQ" base_NamedElement="_CbygIHS2Ee25heOIaicdBQ" id="2.1.1.2" text="If the current speed is equal to the target speed, then the ACC shall command the engine to hold speed.&#xD;&#xA;" base_Class="_CbygIHS2Ee25heOIaicdBQ"/>
+  <Requirements:Requirement xmi:id="_UEHowHS2Ee25heOIaicdBQ" base_NamedElement="_UD-e0HS2Ee25heOIaicdBQ" id="2.1.1.3" text="If the current speed is higher than the target speed, then the ACC shall command the engine to decelerate.&#xD;&#xA;" base_Class="_UD-e0HS2Ee25heOIaicdBQ"/>
+  <Requirements:Requirement xmi:id="_xGGxQXS2Ee25heOIaicdBQ" base_NamedElement="_xGGxQHS2Ee25heOIaicdBQ" id="2.2" text="The ACC shall hold a distance of at least 90 meters ahead.&#xD;&#xA;" base_Class="_xGGxQHS2Ee25heOIaicdBQ"/>
+  <Requirements:Requirement xmi:id="_fC-tkHS3Ee25heOIaicdBQ" base_NamedElement="_fC4m8HS3Ee25heOIaicdBQ" id="2.2.1" text="The ACC must determine if there is a car within 90 meters ahead.&#xD;&#xA;" base_Class="_fC4m8HS3Ee25heOIaicdBQ"/>
+  <Requirements:Requirement xmi:id="_KdFLIXS4Ee25heOIaicdBQ" base_NamedElement="_KdFLIHS4Ee25heOIaicdBQ" id="2.2.1.1" text="If ACC detects a car in front, then it shall command the engine to decelerate." base_Class="_KdFLIHS4Ee25heOIaicdBQ"/>
+  <Requirements:Refine xmi:id="_iKIPQXS4Ee25heOIaicdBQ" base_DirectedRelationship="_iKIPQHS4Ee25heOIaicdBQ" base_Abstraction="_iKIPQHS4Ee25heOIaicdBQ"/>
+  <Requirements:Refine xmi:id="_qco4AXS4Ee25heOIaicdBQ" base_DirectedRelationship="_qco4AHS4Ee25heOIaicdBQ" base_Abstraction="_qco4AHS4Ee25heOIaicdBQ"/>
+  <Requirements:Refine xmi:id="_tLcAkXS4Ee25heOIaicdBQ" base_DirectedRelationship="_tLcAkHS4Ee25heOIaicdBQ" base_Abstraction="_tLcAkHS4Ee25heOIaicdBQ"/>
+  <Requirements:Refine xmi:id="_yJt4cXS4Ee25heOIaicdBQ" base_DirectedRelationship="_yJt4cHS4Ee25heOIaicdBQ" base_Abstraction="_yJt4cHS4Ee25heOIaicdBQ"/>
+  <Requirements:Refine xmi:id="_20ygcHS4Ee25heOIaicdBQ" base_DirectedRelationship="_20ovcHS4Ee25heOIaicdBQ" base_Abstraction="_20ovcHS4Ee25heOIaicdBQ"/>
+  <Requirements:Refine xmi:id="_4O5G8XS4Ee25heOIaicdBQ" base_DirectedRelationship="_4O5G8HS4Ee25heOIaicdBQ" base_Abstraction="_4O5G8HS4Ee25heOIaicdBQ"/>
 </xmi:XMI>
