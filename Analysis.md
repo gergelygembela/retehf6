@@ -57,7 +57,7 @@ As for requirement 4, it should be more abstract, like holding a distance of at 
 
 2\.2\. The ACC shall hold a distance of at least 90 meters ahead.
 
-2\.2\.1\. The ACC must measure the distance 90 meters ahead and determine if there is a car within 90 meters ahead.
+2\.2\.1\. The ACC must determine if there is a car within 90 meters ahead.
 
 2\.2\.1\.1\. If ACC detects a car in front, then it shall command the engine to decelerate.
 
@@ -70,7 +70,8 @@ As for requirement 4, it should be more abstract, like holding a distance of at 
 
 `ACCController.setAccSpeedAndSendSignals(int)` and `ACCController.setLastDistanceAndSendSignals(int)` shall be combined into `ACCController.updateStateAndSendSignals(int, int)`, whereas `ACCController.lastDistance` and `ACCController.lastSpeed` shall be used as parameters if either it is not the upgradable value.
 
-Potential implementation:
+### Potential implementation
+
 ``` Java
 void setAccSpeedAndSendSignals(int currentSpeedValue) {
     updateStateAndSendSignals(currentSpeedValue, lastDistance);
