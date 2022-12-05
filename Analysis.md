@@ -103,7 +103,7 @@ void updateStateAndSendSignals(int speed, int distance) {
 ## Test objectives
 
 ### Test 1
-Test 1 tests whether the ACC accelerates when a car is NOT in front in 90 meters.
+Tests whether the ACC accelerates when a car is NOT in front of 90 meters.
 ### Test 2
 Tests whether the ACC decreases the speed of the car correctly.
 
@@ -117,7 +117,7 @@ Tests whether the ACC increases speed correctly when the obstacle is farther tha
 Tests whether the ACC can be turned off.
 
 ### Test testReq2_1_1_2
-Tests whether tha acc can command the engine to hold/maintain speed.
+Tests whether the ACC can command the engine to hold/maintain speed.
 
 
 ## Review and summary
@@ -125,6 +125,4 @@ Tests whether tha acc can command the engine to hold/maintain speed.
 We defined more test cases after inspecting the provided implementation, 
 as we found that it presents dangerous and erroneous behavior because the system fails to 
 take both parameters into account when commanding the EngineController.
-The new tests fail, even though they only evaluate expected behavior, and in order for the system to
- be able to operate (more) safely, the problems described above should be fixed,
- and the addittional tests we defined must all complete successfully.
+The new tests fail, even though they only evaluate expected behavior, and for the system to be able to operate (more) safely, the problems described above should be fixed, and the additional tests we defined must all perform successfully.

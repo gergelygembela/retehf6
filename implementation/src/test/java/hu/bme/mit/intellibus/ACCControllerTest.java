@@ -126,11 +126,8 @@ class ACCControllerTest {
 
     //Tests whether the ACC turns off correctly
     @Test
-    void testReq1_2(){
+    void testReq1(){
         acc.setSpeed(120);
-        acc.currentSpeed(90);
-        acc.currentDistance(110);
-        assertEquals(MockEngineController.State.INCREASE_SPEED, mockEngineController.getState());
 
         acc.turnOff();
         assertEquals(acc.getState(), ACCController.State.OFF);
