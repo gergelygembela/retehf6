@@ -50,6 +50,7 @@ class ACCControllerTest {
         acc = new ACCController(mockEngineController);
     }
 
+    @Test
     void testReq1() {
         acc.setSpeed(50);
 
@@ -99,6 +100,31 @@ class ACCControllerTest {
 
     }
 
+    //Tests whether the ACC increases the speed of the car correctly
+    @Test
+    void testReq5(){
+        acc.setSpeed(50);
+        acc.currentSpeed(45);
+        acc.currentDistance(72);
+        assertEquals(MockEngineController.State.DECREASE_SPEED, mockEngineController.getState());
 
+        acc.currentSpeed(40);
+        assertEquals(MockEngineController.State.DECREASE_SPEED, mockEngineController.getState());
+
+        acc.currentDistance(90);
+        assertEquals(MockEngineController.State.INCREASE_SPEED, mockEngineController.getState());
+    }
+
+    //Tests whether the ACC turns off correctly
+    @Test
+    void testReq6(){
+        acc.setSpeed(120);
+        acc.currentSpeed(90);
+        acc.currentDistance(110);
+        assertEquals(MockEngineController.State.INCREASE_SPEED, mockEngineController.getState());
+
+        acc.turnOff();
+        assertEquals(acc.getState(), ACCController.State.OFF);
+    }
 
 }
