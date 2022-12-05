@@ -59,6 +59,15 @@ class ACCControllerTest {
         assertEquals(acc.getAccSpeed(), 50);
     }
 
+    //Tests whether the ACC turns off correctly
+    @Test
+    void testReq1_2(){
+        acc.setSpeed(120);
+
+        acc.turnOff();
+        assertEquals(acc.getState(), ACCController.State.OFF);
+    }
+
     @Test
     void testReq2_1_1_1() {
         acc.setSpeed(130);
@@ -68,6 +77,15 @@ class ACCControllerTest {
         // events, they are not mapped to method calls in the code, simply ignored
 
         assertEquals(MockEngineController.State.INCREASE_SPEED, mockEngineController.getState());
+    }
+
+    //Tests whether tha acc can command the engine to hold speed.
+    @Test
+    void testReq2_1_1_2(){
+        acc.setSpeed(90);
+        acc.currentSpeed(90);
+
+        assertEquals(MockEngineController.State.TRAVELING_WITH_ACC_SPEED, mockEngineController.getState());
     }
 
     //Tests whether the ACCs can handle down-slopes, or requests to reduce speed
@@ -113,23 +131,4 @@ class ACCControllerTest {
         acc.currentDistance(91);
         assertEquals(MockEngineController.State.INCREASE_SPEED, mockEngineController.getState());
     }
-
-    //Tests whether the ACC turns off correctly
-    @Test
-    void testReq1_2(){
-        acc.setSpeed(120);
-
-        acc.turnOff();
-        assertEquals(acc.getState(), ACCController.State.OFF);
-    }
-
-    //Tests whether tha acc can command the engine to hold speed.
-    @Test
-    void testReq2_1_1_2(){
-        acc.setSpeed(90);
-        acc.currentSpeed(90);
-
-        assertEquals(MockEngineController.State.TRAVELING_WITH_ACC_SPEED, mockEngineController.getState());
-    }
-
 }
