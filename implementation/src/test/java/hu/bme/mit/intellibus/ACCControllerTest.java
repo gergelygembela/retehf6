@@ -60,7 +60,7 @@ class ACCControllerTest {
 
     @Test
     void testReq2() {
-        acc.setSpeed(30);
+        acc.setSpeed(130);
         acc.currentSpeed(80);
 
         // As evaluate signals on the sequence diagrams are only used to provide ordering between otherwise unrelated
@@ -68,11 +68,6 @@ class ACCControllerTest {
 
         assertEquals(MockEngineController.State.INCREASE_SPEED, mockEngineController.getState());
     }
-
-
-
-    
-
 
     //Tests whether the ACC accelerates when a car is NOT in front in 90 meters
     @Test    
