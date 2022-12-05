@@ -51,7 +51,7 @@ class ACCControllerTest {
     }
 
     @Test
-    void testReq1() {
+    void testReq1_1() {
         acc.setSpeed(50);
 
         // State invariants are mapped to assertions
@@ -60,7 +60,7 @@ class ACCControllerTest {
     }
 
     @Test
-    void testReq2() {
+    void testReq2_1_1_1() {
         acc.setSpeed(130);
         acc.currentSpeed(80);
 
@@ -70,27 +70,17 @@ class ACCControllerTest {
         assertEquals(MockEngineController.State.INCREASE_SPEED, mockEngineController.getState());
     }
 
-    //Tests whether the ACC accelerates when a car is NOT in front in 90 meters
-    @Test    
-    void testReq3_1(){
-        acc.setSpeed(50);
-        acc.currentSpeed(20);
-
-        assertEquals(MockEngineController.State.INCREASE_SPEED, mockEngineController.getState());
-    }
-
     //Tests whether the ACCs can handle down-slopes, or requests to reduce speed
     @Test
-    void testReq3_2(){
+    void testReq2_1_1_3(){
         acc.setSpeed(50);
         acc.currentSpeed(75);
         assertEquals(MockEngineController.State.DECREASE_SPEED, mockEngineController.getState());
     }
 
-
     //Tests whether the ACC decreases the speed of the car correctly
     @Test
-    void testReq4(){
+    void testReq2_2_1_1(){
         acc.setSpeed(50);
         acc.currentSpeed(45);
         assertEquals(MockEngineController.State.INCREASE_SPEED, mockEngineController.getState());
@@ -114,7 +104,7 @@ class ACCControllerTest {
 
     //Tests whether the ACC increases speed correctly when the obstacle is farther than 90 meters.
     @Test
-    void testReq2_1_1_1(){
+    void testReq2_2_1(){
         acc.setSpeed(50);
         acc.currentSpeed(45);
         acc.currentDistance(72);
@@ -126,7 +116,7 @@ class ACCControllerTest {
 
     //Tests whether the ACC turns off correctly
     @Test
-    void testReq1(){
+    void testReq1_2(){
         acc.setSpeed(120);
 
         acc.turnOff();
