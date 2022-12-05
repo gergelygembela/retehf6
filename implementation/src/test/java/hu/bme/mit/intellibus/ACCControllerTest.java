@@ -110,14 +110,22 @@ class ACCControllerTest {
 
         acc.currentSpeed(40);
         assertEquals(MockEngineController.State.DECREASE_SPEED, mockEngineController.getState());
+    }
 
-        acc.currentDistance(90);
+    @Test
+    void testReq5_1(){
+        acc.setSpeed(50);
+        acc.currentSpeed(45);
+        acc.currentDistance(72);
+        assertEquals(MockEngineController.State.DECREASE_SPEED, mockEngineController.getState());
+
+        acc.currentDistance(91);
         assertEquals(MockEngineController.State.INCREASE_SPEED, mockEngineController.getState());
     }
 
     //Tests whether the ACC turns off correctly
     @Test
-    void testReq6(){
+    void testReq1_2(){
         acc.setSpeed(120);
         acc.currentSpeed(90);
         acc.currentDistance(110);
@@ -125,6 +133,15 @@ class ACCControllerTest {
 
         acc.turnOff();
         assertEquals(acc.getState(), ACCController.State.OFF);
+    }
+
+    //Tests whether tha acc can command the engine to hold speed.
+    @Test
+    void testReq2_1_1_2(){
+        acc.setSpeed(90);
+        acc.currentSpeed(90);
+
+        assertEquals(MockEngineController.State.TRAVELING_WITH_ACC_SPEED, mockEngineController.getState());
     }
 
 }

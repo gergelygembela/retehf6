@@ -107,7 +107,9 @@ Test 1 tests whether the ACC accelerates when a car is NOT in front in 90 meters
 ### Test 3
 ### Test 4
 ### Test 5
-### Test 6
+
+### Test testReq2_1_1_2
+Tests whether tha acc can command the engine to hold speed.
 
 
 ## Review and summary
