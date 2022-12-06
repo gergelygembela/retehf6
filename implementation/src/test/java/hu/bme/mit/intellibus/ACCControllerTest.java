@@ -79,7 +79,7 @@ class ACCControllerTest {
         assertEquals(MockEngineController.State.INCREASE_SPEED, mockEngineController.getState());
     }
 
-    //tests whether the ACC reacts correctly tho changed desired speed
+    //tests whether the ACC reacts correctly to changed desired speed
     @Test
     void testReq1_3() {
         acc.setSpeed(130);
