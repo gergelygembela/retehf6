@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="hu.bme.mit.intellibus.ACCControllerTest" tests="9" skipped="0" failures="2" errors="0" timestamp="2022-12-06T14:06:26" hostname="G-SP8" time="0.068">
+<testsuite name="hu.bme.mit.intellibus.ACCControllerTest" tests="9" skipped="0" failures="2" errors="0" timestamp="2022-12-06T14:19:38" hostname="G-SP8" time="0.029">
   <properties/>
-  <testcase name="testReq2_1_1_1()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.044"/>
-  <testcase name="testReq2_1_1_2()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.001"/>
-  <testcase name="testReq2_1_1_3()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.001"/>
+  <testcase name="testReq2_1_1_1()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.018"/>
+  <testcase name="testReq2_1_1_2()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.0"/>
+  <testcase name="testReq2_1_1_3()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.0"/>
   <testcase name="testReq2_2_1_1()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.001"/>
-  <testcase name="testReq2_2_1()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.007">
+  <testcase name="testReq2_2_1()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.004">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;INCREASE_SPEED&gt; but was: &lt;DECREASE_SPEED&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;INCREASE_SPEED&gt; but was: &lt;DECREASE_SPEED&gt;
 	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at app//org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -99,7 +99,7 @@
 </failure>
   </testcase>
   <testcase name="testReq1_1()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.001"/>
-  <testcase name="testReq1_2()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.002"/>
+  <testcase name="testReq1_2()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.0"/>
   <testcase name="testReq1_3()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.001"/>
   <testcase name="testReq2_2()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;DECREASE_SPEED&gt; but was: &lt;INCREASE_SPEED&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;DECREASE_SPEED&gt; but was: &lt;INCREASE_SPEED&gt;
