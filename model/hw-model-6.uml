@@ -11,6 +11,7 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_eTscEGRYEe2CJumRKTgSng" name="REQ1">
         <nestedClassifier xmi:type="uml:Class" xmi:id="_q5HVcHS0Ee25heOIaicdBQ" name="REQ1.1"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_0Rwf0HS0Ee25heOIaicdBQ" name="REQ1.2"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_zG390HV0Ee2iprzTUjTHwQ" name="REQ1.3"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_h75R0GRYEe2CJumRKTgSng" name="REQ2">
         <nestedClassifier xmi:type="uml:Class" xmi:id="_NX_kcHS1Ee25heOIaicdBQ" name="REQ2.1">
@@ -915,4 +916,10 @@ As Papyrus does not support simple specification of a (state machine) state here
   <Requirements:Requirement xmi:id="_xGGxQXS2Ee25heOIaicdBQ" base_NamedElement="_xGGxQHS2Ee25heOIaicdBQ" id="2.2" text="The ACC shall hold a distance of at least 90 meters ahead.&#xD;&#xA;" base_Class="_xGGxQHS2Ee25heOIaicdBQ"/>
   <Requirements:Requirement xmi:id="_fC-tkHS3Ee25heOIaicdBQ" base_NamedElement="_fC4m8HS3Ee25heOIaicdBQ" id="2.2.1" text="The ACC must determine if there is a car within 90 meters ahead.&#xD;&#xA;" base_Class="_fC4m8HS3Ee25heOIaicdBQ"/>
   <Requirements:Requirement xmi:id="_KdFLIXS4Ee25heOIaicdBQ" base_NamedElement="_KdFLIHS4Ee25heOIaicdBQ" id="2.2.1.1" text="If ACC detects a car in front, then it shall command the engine to decelerate." base_Class="_KdFLIHS4Ee25heOIaicdBQ"/>
+  <MiniUTP.MiniUTP:TestCase xmi:id="_X0xJcHVyEe2iprzTUjTHwQ" base_Behavior="_yEiBAHS5Ee2A8fMFC6XQew"/>
+  <MiniUTP.MiniUTP:TestCase xmi:id="_aBxzkHVyEe2iprzTUjTHwQ" base_Behavior="_hkrt8HS6Ee2A8fMFC6XQew"/>
+  <MiniUTP.MiniUTP:TestCase xmi:id="_bMZMkHVyEe2iprzTUjTHwQ" base_Behavior="_SsjKIHS8Ee2A8fMFC6XQew"/>
+  <MiniUTP.MiniUTP:TestCase xmi:id="_cb0NEHVyEe2iprzTUjTHwQ" base_Behavior="_3IlCUHS8Ee2A8fMFC6XQew"/>
+  <MiniUTP.MiniUTP:TestCase xmi:id="_duXaEHVyEe2iprzTUjTHwQ" base_Behavior="_RvuIsHVwEe2xgcVDC5WeKw"/>
+  <Requirements:Requirement xmi:id="_zG-rgHV0Ee2iprzTUjTHwQ" base_NamedElement="_zG390HV0Ee2iprzTUjTHwQ" id="1.3" text="The user shall be able to set a new target speed when the ACC is turned on." base_Class="_zG390HV0Ee2iprzTUjTHwQ"/>
 </xmi:XMI>
