@@ -43,6 +43,8 @@ As for requirement 4, it should be more abstract, like holding a distance of at 
 
 1\.2\. The user shall be able to clear the set speed and thereby turn off the ACC.
 
+1\.3\. The user shall be able to set a new target speed when the ACC is turned on.
+
 2\. The ACC shall command the engine control when it is on.
 
 2\.1\. The ACC shall maintain the target speed set by the driver.
@@ -107,6 +109,9 @@ Tests whether the ACC can be turned on.
 
 ### Test testReq1_2
 Tests whether the ACC can be turned off.
+
+### Test testReq1_3
+Test whether the ACC can set a new target speed.
 
 ### Test testReq2_1_1_1
 Tests whether the ACC can command the engine to increase the speed of the car correctly.
