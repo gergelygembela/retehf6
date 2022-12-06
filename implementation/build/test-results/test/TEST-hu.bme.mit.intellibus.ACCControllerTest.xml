@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="hu.bme.mit.intellibus.ACCControllerTest" tests="8" skipped="0" failures="2" errors="0" timestamp="2022-12-05T17:12:28" hostname="G-ZENDESKTOP" time="0.027">
+<testsuite name="hu.bme.mit.intellibus.ACCControllerTest" tests="9" skipped="0" failures="2" errors="0" timestamp="2022-12-06T14:06:26" hostname="G-SP8" time="0.068">
   <properties/>
-  <testcase name="testReq2_1_1_1()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.018"/>
-  <testcase name="testReq2_1_1_2()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.0"/>
+  <testcase name="testReq2_1_1_1()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.044"/>
+  <testcase name="testReq2_1_1_2()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.001"/>
   <testcase name="testReq2_1_1_3()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.001"/>
   <testcase name="testReq2_2_1_1()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.001"/>
-  <testcase name="testReq2_2_1()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.003">
+  <testcase name="testReq2_2_1()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.007">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;INCREASE_SPEED&gt; but was: &lt;DECREASE_SPEED&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;INCREASE_SPEED&gt; but was: &lt;DECREASE_SPEED&gt;
 	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at app//org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
-	at app//hu.bme.mit.intellibus.ACCControllerTest.testReq2_2_1(ACCControllerTest.java:114)
+	at app//hu.bme.mit.intellibus.ACCControllerTest.testReq2_2_1(ACCControllerTest.java:143)
 	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base@17.0.5/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -99,15 +99,16 @@
 </failure>
   </testcase>
   <testcase name="testReq1_1()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.001"/>
-  <testcase name="testReq1_2()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.0"/>
-  <testcase name="testReq2_2()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.0">
+  <testcase name="testReq1_2()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.002"/>
+  <testcase name="testReq1_3()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.001"/>
+  <testcase name="testReq2_2()" classname="hu.bme.mit.intellibus.ACCControllerTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;DECREASE_SPEED&gt; but was: &lt;INCREASE_SPEED&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;DECREASE_SPEED&gt; but was: &lt;INCREASE_SPEED&gt;
 	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at app//org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
-	at app//hu.bme.mit.intellibus.ACCControllerTest.testReq2_2(ACCControllerTest.java:102)
+	at app//hu.bme.mit.intellibus.ACCControllerTest.testReq2_2(ACCControllerTest.java:130)
 	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base@17.0.5/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

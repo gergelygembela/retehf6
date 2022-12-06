@@ -79,6 +79,16 @@ class ACCControllerTest {
         assertEquals(MockEngineController.State.INCREASE_SPEED, mockEngineController.getState());
     }
 
+    //tests whether the ACC reacts correctly tho changed desired speed
+    @Test
+    void testReq1_3() {
+        acc.setSpeed(130);
+        acc.currentSpeed(80);
+        assertEquals(MockEngineController.State.INCREASE_SPEED, mockEngineController.getState());
+        acc.setSpeed(70);
+        assertEquals(MockEngineController.State.DECREASE_SPEED, mockEngineController.getState());
+    }
+
     //Tests whether tha acc can command the engine to hold speed.
     @Test
     void testReq2_1_1_2(){
@@ -119,6 +129,7 @@ class ACCControllerTest {
         acc.currentSpeed(40);
         assertEquals(MockEngineController.State.DECREASE_SPEED, mockEngineController.getState());
     }
+
 
     //Tests whether the ACC increases speed correctly when the obstacle is farther than 90 meters.
     @Test
